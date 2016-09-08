@@ -1,7 +1,7 @@
 #MAKEFILE
 
 #Name of tex file
-FILE_NAME  = project_statement
+FILE_NAME  = STAI_Forero
 FILE_TEX = $(FILE_NAME).tex
 FILE_PDF = $(FILE_NAME).pdf
 
