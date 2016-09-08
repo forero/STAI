@@ -1,0 +1,174 @@
+\documentclass[12pt,spanish]{article}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\title{{\sc Entendiendo a DESI}\\{\small\sc Propuesta STAI 2017-20}}
+\author{Jaime E. Forero Romero\\Departamento de F\'isica\\Universida
+  de los Andes}
+\begin{document}
+\maketitle
+\begin{abstract}
+Este documento expone mis planes para un Semestre de Trabajo Acad\'emico
+Indipendiente (STAI) durante el per\'iodo 2017-20. 
+En ese per\'iodo planeo pasar cuatro meses en el Lawrence Berkeley
+National Laboratory contribuyendo al Dark Energy Spectroscopic
+Instrument, un experimento de \'ultima generaci\'on dise\~nado para
+estudiar la expansi\'on acelerada del Universo.
+\end{abstract}
+
+
+
+
+
+\section*{Objetivos}
+
+Contribuir a la colaboraci\'on internacional Dark Energy Spectroscopic
+Instrument (DESI) durante una visita de cuatro meses (per\'iodo
+2017-20) al Lawrence Berkeley National Laboratory en California.  
+
+
+\section*{Contexto}
+DESI es un experimento que har\'a un mapa 3D del universo midiendo la
+distancia a 35 millones de galaxias
+distantes \footnote{\url{http://desi.lbl.gov/}}. 
+Este mapa ampliar\'a nuestro conocimiento sobre la
+expansi\'on acelerada del Universo, hallazgo que vali\'o el premio
+Nobel en  F\'isica en el 2011 a los tres astr\'onomos quienes la observaron
+por primera vez. Entender esta  expansi\'on acelerada es uno de los
+grandes problemas de la f\'isica fundamental del momento y uno de los
+motores de la investigaci\'on en cosmolog\'ia observacional.
+
+
+
+DESI empezar\'a su construcci\'on en el 2017 y tomar\'a datos a
+partir del 1 de enero del 2019 durante un per\'iodo de 5 a\~nos. 
+A la fecha, la colaboraci\'on cuenta con cerca de 300 cient\'ificos de
+45 instituciones de todo el mundo. 
+Los avances de DESI solamente podr\'an  ser superados con la nueva
+generaci\'on de experimentos e instrumentos a mediados de la d\'ecada
+del 2020. 
+
+Uniandes hace parte formal de esta colaboraci\'on desde comienzos del
+2014 gracias a mis contribuciones en el \'area de simulaciones
+computacionales. 
+Una contribuci\'on constante a la colaboraci\'on, como la que he
+venido haciendo, permite que algunos miembros de DESI logren el
+estatuto especial de \texttt{Builder}. Miembros de esta 
+categor\'ia especial logran coautor\'ia en todos los art\'iculos de la
+colaboraci\'on. Mi visita a Berkeley es un paso importante para
+obtener la recomendaci\'on de los directores de DESI para
+alcanzar ese estatuto.
+
+\section*{Trabajo Preliminar}
+
+Desde mi \'epoca de postdoc en UC Berkeley en el 2011-2012 (justo
+antes de mi llegada a Uniades) estuve en contacto con los fundadores
+de la colaboraci\'on DESI. Entre el 2012 y el 2014, ya en Uniandes,
+contribu\'i con c\'odigo para simular partes de DESI y poder
+guiar decisiones de dise\~no del experimento.  
+
+Esta contribuci\'on cient\'ifica permiti\'o la entrada oficial de
+Uniandes a la colaboraci\'on sin pagar los altos costos monetarios que
+esto implica normalmente para otros cient\'ificos\footnote{Del orden
+  de 200 mil d\'olares por investigador principal.} 
+
+Desde el 2014 contin\'uo con mayor intensidad este trabajo de
+simulaci\'on. Visito Berkeley una vez al
+semestre, en promedio, para trabajar en el proyecto.
+La mitad de los fondos que costean esos viajes provienen directamente
+de DESI y la otra mitad de mi proyecto FAPA. 
+Resultados parciales de este trabajo han sido presentados en
+encuentros de la Society of Photo-Optical Instrumentation Engineers
+(SPIE):
+\begin{itemize}
+\item 
+\textit {Target allocation yields for massively multiplexed
+  spectroscopic surveys with fibers},  Saunders, Will; Smedley, Scott;
+Gillingham, Peter; {\bf Forero-Romero, Jaime E.}; Jouvel, Stephanie; Nord, Brian, 
+Proceedings of the SPIE, Volume 9150, id. 915023 10 pp. (2014).
+\end{itemize}
+%
+y la  American Astronomical Society  (AAS)
+\begin{itemize}
+\item \textit{The Dark Energy Spectroscopic Instrument (DESI): Tiling and Fiber Assignment}
+Cahn, Robert N.; Bailey, Stephen J.; Dawson, Kyle S.; {\bf Forero Romero,
+Jaime}; Schlegel, David J.; White, Martin;
+American Astronomical Society, AAS Meeting \#225, id.336.10, (2015)
+\end{itemize}
+
+
+
+El objetivo cient\'ifico para el 2017 es lograr simular el instrumento
+completo para desarrollar estrategias que maximicen su r\'edito
+cient\'ifico. 
+El marco general que gu\'ia esta iniciativa de
+simulaci\'on ya fue objeto de una publicaci\'on a comienzo de este a\~no:
+
+\begin{itemize}
+\item {\it SPOKES: An end-to-end simulation facility for
+  spectroscopic cosmological surveys}, 
+	Nord, B.; Amara, A.; R\'efr\'egier, A.; Gamper, La.; Gamper, Lu.;
+        Hambrecht, B.; Chang, C.; {\bf Forero-Romero, J. E.}; Serrano, S.;
+        Cunha, C.; Coles, O.; Nicola, A.; Busha, M.; Bauer, A.;
+        Saunders, W.; Jouvel, S.; Kirk, D.; Wechsler, R., Astronomy
+        and Computing, 15, 1, (2016)
+\end{itemize}
+
+Durante el primer semestre del 2017 haremos el trabajo de
+simulaci\'on. En esto esperamos utilizar 10 millones de horas de CPU
+para generar 200 TB de datos.
+Durante mi visita a Berkeley en el segundo semestre del 2017, vamos
+a dedicarnos al an\'alisis detallado de estos datos para diagnosticar
+la \emph{performace} esperada del experimento y sugerir estrategias para
+maximizar el r\'edito cient\'ifico de DESI.  
+
+
+\section*{Resultados Esperados}
+\begin{itemize}
+\item Diagn\'ostico de \textit{performance} de DESI a partir de los
+  datos de la simulaci\'on completa del instrumento.
+\item Contribuir software para simulaci\'on de DESI en repositorios de
+  acceso p\'ublico a la comunidad internacional.
+\item Escribir una nota t\'ecnica interna a la colaboraci\'on DESI
+  sobre los resultados principales del ejercicio de simulaci\'on.
+\item Escribir y someter al menos un art\'iculo (a una revista ISI
+  de primer cuartil) con resultados de este ejercicio de
+  simulaci\'on que sean de inter\'es para la comunidad internacional.  
+\item Solicitar una recomendaci\'on para ser   considerado como
+  \texttt{Builder}  dentro de la colaboraci\'on DESI.  
+ \end{itemize}
+
+\section*{Recursos Necesarios}
+
+Recursos para viajes y publicaciones vienen de mi proyecto
+\texttt{Simulaciones y Observaciones del Universo a Gran Escala} (SOUGE). Este
+proyecto de 36 meses de duraci\'on es financiado por COLCIENCIAS. Su
+ejecuci\'on debe empezar en Octubre del 2016. 
+
+El Lawrence Berkeley National Laboratory va proveerme de espacio de
+oficina y acceso a hardware/software de la colaboraci\'on DESI. Esta
+es una continuaci\'on natural de lo que ya ha venido pasando con mis
+visitas desde el 2014. 
+
+Tambi\'en envi\'e una solicitud para obtener una Fulbright
+Scholarship. Esto me permitir\'ia tener fondos adicionales, pero en
+caso de ser denegada no impedir\'ia realizar el STAI con \'exito.
+
+\section*{Cronograma}
+\begin{itemize}
+\item Agosto 2017. An\'alisis de los datos de la simulaci\'on completa
+  de DESI. 
+\item Septiembre 2017. Redacci\'on del reporte interno para la
+  colaboraci\'on sobre los resultados de la simulaci\'on. 
+Incluye
+  sugerencias para maximizar la \emph{performance} del instrumento. 
+\item Octubre 2017. Redacci\'on del art\'iculo internacional
+  presentando los resultados m\'as interesantes del ejercicio de
+  simulaci\'on. 
+\item Noviembre 2017. Presentaci\'on de los resultados en encuentros
+  de la colaboraci\'on DESI. Solicitud de la recomendaci\'on como
+  \texttt{\bf Builder}.
+\end{itemize}
+
+\end{document}
