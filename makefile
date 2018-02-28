@@ -1,7 +1,7 @@
 #MAKEFILE
 
 #Name of tex file
-FILE_NAME  = STAI_Forero
+FILE_NAME  = Reporte_STAI_Forero
 FILE_TEX = $(FILE_NAME).tex
 FILE_PDF = $(FILE_NAME).pdf
 
@@ -11,7 +11,7 @@ LATEX = pdflatex
 
 all: $(FILE_PDF)
 
-$(FILE_PDF) : $(FILE_TEX) references.bib
+$(FILE_PDF) : $(FILE_TEX) 
 	$(LATEX) $(FILE_TEX)
 
 clean:
