@@ -5,6 +5,7 @@ FILE_NAME  = Reporte_STAI_Forero
 FILE_TEX = $(FILE_NAME).tex
 FILE_PDF = $(FILE_NAME).pdf
 
+
 #Latex compiler
 LATEX = pdflatex
 
