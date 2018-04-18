@@ -46,6 +46,31 @@ Los institutos parte de DESI que se visitaron durante el STAI fueron:
 \item{Lawrence Berkeley National Laboratory en California.}
 \end{itemize}
 
+En las tres visitas estuve realizando las mismas actividades:
+
+\begin{itemize}
+\item Desarrollar y validar el m\'odulo \verb"desitarget". Este m\'odulo est\'a
+  encargado de seleccionar las galaxias que ser\'an observadas por
+  DESI.
+  Especialmente estuve desarrollando y validando la parte del
+  m\'odulo que crea esta lista de galaxias a partir de simulaciones
+  cosmol\'ogicas.
+\item Desarrolar y validar el m\'odulo \verb"desisim". Este m\'odulo
+est\'a encargado de simular el proceso de observaciones de DESI noche
+por noche. 
+Especialmente estuve desarrollando y validando la parte del m\'odulo
+que hace simulaciones r\'apidas de DESI. Esto permite simular en cerca
+de cinco horas los resultados completos de cinco a\~nos de operaciones
+de DESI.
+\item Desarrollar y validar el m\'odulo
+  \verb"quicksurvey_example". Este m\'odulo sirve de demostraci\'on
+  sobre como simular DESI. Su utilidad es doble: 1) nuevos miembros de
+  la colaboraci\'on pueden aprender a simular desi y 2) sirve de test
+  de validaci\'on ante cualquier cambio de los m\'odulos de
+  simulaci\'on.
+\item Producir simulaciones de DESI que luego ser\'ian disponibles a
+  diferentes miembros de la colaboraci\'on.
+\end{itemize}
 
 \section*{Resultados Obtenidos}
 
@@ -68,9 +93,28 @@ El estado despu\'es del STAI de cada uno de los puntos anteriores es
 el siguiente.
 
 \begin{enumerate}
-\item Las simulaciones se realizaron. Adjunto el pdf de la p\'agina
+\item Las simulaciones se realizaron. 
+  El resultado principal es que a\'un bajo las condiciones m\'as
+  pesimistas de ineficiencia de instrumentos y mal clima, DESI
+  lograr\'a tener el n\'umero de observaciones necesarias para
+  completar sus objetivos cient\'ificos.
+
+  Adjunto el pdf de la p\'agina
   interna de la colaboraci\'on que habla de los resultados de esta simulaci\'on:\\
   \verb"100% Quicksurvey End-to-End Simulation".
+  Aqu\'i se simulan los resultados de DESI despu\'es de cinco a\~nos
+  de operaciones bajo diferentes condiciones. Esto incluye: la
+  selecci\'on de galaxias a observar 
+  dentro de simulaciones cosmol\'ogicals, la cadencia del telescopio
+  noche por noche, la asignaci\'on de fibras \'opticas a galaxias y
+  finalmente la medici\'on del redshift de cada una de las galaxias
+  simuladas. El resultado final son varios cat\'alogos, cada uno con
+  50 millones de galaxias, como resultado final de DESI bajo
+  diferentes condiciones de observaci\'on. 
+
+  Una presentaci\'on (Data Challenge Update) con m\'as detalles se
+  adjunta a este reporte. 
+  
 \item La contribuci\'on al software ha sido continua. Todas las
   contribuciones pueden ser vistas en el repositorio p\'ublico del
   proyecto:\\ \url{https://github.com/desihub}.
@@ -113,18 +157,30 @@ La lista detallada de contribuciones se encuentra en:
 \item En lugar de una nota t\'ecnica se hizo una presentaci\'on en el
   DESI Collaboration Meeting en Stanford
   \url{https://kipac.stanford.edu/events/desi-collaboration-meeting}. 
-\item El art\'iculo sigue en preparaci\'on. En el siguiente enlace se
-  puede econtrar el manuscrito que est\'a siendo preparado por la
-  colaboraci\'on:\\ \url{https://www.overleaf.com/5923731xwddpv#/19875270/}.
-  
-Esperamos enviarlo a publicaci\'on a mediados del 2018. 
-  
+
+  La raz\'on para no escribir la nota t\'ecnica es que se decidi\'o
+  dar los resultados en forma de cat\'alogos para que cada subgrupo de
+  DESI (cerca de 10 grupos diferentes) lo analizara de acuerdo a sus
+  necesidades. 
+  La presentaci\'on en el DESI collaboration meeting lo que hace
+  entonces es resumir las caracter\'isticas de los cat\'alogos
+  simulados. 
+  Esta presentaci\'on (Data Challenge Update) se adjunta a este reporte.
+\item Un art\'iculo (\emph{Unbiased clustering estimates with the DESI
+fibre assignment}) que utiliza resultados de las simulaciones y de
+  los m\'odulos desarrollados fu\'e enviado ahora (Abril 2018) y se
+  adjunta a este reporte. 
 
 \item La solicitud fue hecha y la respuesta sobre el avance hecho en
-  trabajo a la colaboraci\'on es positiva. Se adjunta la carta de
+  trabajo a la colaboraci\'on es positiva. \footnote{Se adjunta la carta de
   respuesta que toma en cuenta el trabajo hecho hasta el 2016. 
   A mediados del 2018 se har\'a una nueva solicitud que
-  toma en cuenta el trabajo hecho en el 2017.
+  toma en cuenta el trabajo hecho en el 2017. 
+  La solicitud que incluye el trabajo en el 2017 no se puede hacer ahora debido al funcionamiento
+  interno de la colaboraci\'on, solamente hasta ahora (primer
+  semestre 2018) se est\'a haciendo la contabilidad de contribuciones
+  hechas en el 2017. Hasta el segundo semestre del 2018 se puede tener
+  una carta que incluya las contribuciones del 2017.}
 \end{enumerate}
 
 
